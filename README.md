@@ -8,8 +8,6 @@ Space to Storage is a comprehensive web application built with Next.js for the f
 
 - **Ground Elevation Analysis:** Gain insights into the topography of your agricultural land to make informed decisions about crop selection, irrigation planning, and drainage.
 
-- **Water Storage Solutions:** Utilize advanced tools to plan and manage water storage on your farm efficiently. Identify optimal locations for ponds, reservoirs, and other water storage infrastructure.
-
 
 ## Getting Started
 
