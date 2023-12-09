@@ -1,8 +1,18 @@
+"use client";
+
+import dynamic from "next/dynamic";
+import React, { useMemo } from "react";
+
+
 const Map = () => {
+    const MapComponent = useMemo(
+        () => dynamic(() => import("@/app/_components/Map/map"), {ssr: false}),
+        []
+    );
     return (
-        <div>
-            <h1>This page will show the map</h1>
-        </div>
+        <main>
+            <MapComponent />
+        </main>
     );
 };
 
