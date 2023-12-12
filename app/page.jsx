@@ -1,7 +1,11 @@
+import NavbarComponent from "./_components/Navbar/navbar";
+
 const Home = () => {
   return (
-    <main className="bg-slate-200 text-3xl text-center">
-      This will be the landing page for our project.
+    <main className="bg-white text-3xl text-center">
+      <NavbarComponent/>
+      
+
     </main>
   );
 };
