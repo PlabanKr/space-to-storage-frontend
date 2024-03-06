@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function Login() {
   return (
-<div className="flex flex-col items-center justify-center min-h-screen min-w-screen py-2" style={{backgroundImage: "url('/3.jpeg')", backgroundSize: "cover", backgroundPosition: "center"}}>
+<div className="flex flex-col items-center justify-center min-h-screen min-w-screen py-2" style={{backgroundImage: "url('/3.jpg')", backgroundSize: "cover", backgroundPosition: "center"}}>
   <main className="flex flex-col items-center justify-center w-full flex-1 px-3 text-center" style={{ color: "black" }}>
   <div className=" bg-white rounded-2xl shadow-2xl flex w-5/6 max-w-6xl ">
       <div className="w-3/5 p-5 rounded-tl-2xl rounded-bl-2xl text-purple-500 relative" style={{backgroundColor:"#222222"}}>
@@ -40,7 +40,7 @@ export default function Login() {
     <div className="w-2/5 p-5 rounded-tr-2xl rounded-br-2xl py-40 px-12"style={{backgroundColor:"#E4E4E4", color:"#045757"}}>
       <h2 className="text-3xl font-bold mb-8">New Here ?</h2>
       <p className="pb-6">Sign up and discover a great amount of new opportunities!</p>
-      <Link href="/signup" className="hover:bg-white hover:text-teal-700 text-white font-bold py-2 px-4 rounded mt-4" style={{background:"#222222"}}>SIGNUP
+      <Link href="/user/signup" className="hover:bg-white hover:text-teal-700 text-white font-bold py-2 px-4 rounded mt-4" style={{background:"#222222"}}>SIGNUP
       </Link>
       </div>
     </div>
