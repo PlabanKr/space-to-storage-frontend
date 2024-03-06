@@ -8,29 +8,36 @@ import "@maptiler/sdk/dist/maptiler-sdk.css";
 const MapTwoComponent = () => {
 
     const changeMapStyle = () => {
+        if (mapStyle === maptilersdk.MapStyle.SATELLITE) {
+            setMapStyle(maptilersdk.MapStyle.STREETS);
+        } else if (mapStyle === maptilersdk.MapStyle.STREETS) {
+            setMapStyle(maptilersdk.MapStyle.OUTDOOR);
+        } else {
+            setMapStyle(maptilersdk.MapStyle.SATELLITE);
+        }
     };
 
     const mapContainer = useRef(null);
     const map = useRef(null);
-    const tokyo = { lng: 76.8513, lat: 23.0775 };
-    const [MapStyle, setMapStyle] = useState();
+    const vit = { lng: 76.8513, lat: 23.0775 };
+    const [mapStyle, setMapStyle] = useState(maptilersdk.MapStyle.SATELLITE);
     const [zoom] = useState(14);
     maptilersdk.config.apiKey = "h95HIrR86GLDfZlWa9db";
 
     useEffect(() => {
-        if (map.current) return;
+        // if (map.current) return;
       
         map.current = new maptilersdk.Map({
           container: mapContainer.current,
-          style: maptilersdk.MapStyle.TOPO,
-          center: [tokyo.lng, tokyo.lat],
+          style: mapStyle,
+          center: [vit.lng, vit.lat],
           zoom: zoom,
           terrain: true,
           terrainExaggeration: 1.5,
           terrainControl: true,
         });
       
-      }, [tokyo.lng, tokyo.lat, zoom]);
+      }, [vit.lng, vit.lat, zoom, mapStyle]);
 
     return (
         <>
