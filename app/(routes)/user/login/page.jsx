@@ -40,7 +40,7 @@ export default function Login() {
     <div className="w-2/5 p-5 rounded-tr-2xl rounded-br-2xl py-40 px-12"style={{backgroundColor:"#E4E4E4", color:"#045757"}}>
       <h2 className="text-3xl font-bold mb-8">New Here ?</h2>
       <p className="pb-6">Sign up and discover a great amount of new opportunities!</p>
-      <Link href="/signup" className="hover:bg-white hover:text-teal-700 text-white font-bold py-2 px-4 rounded mt-4" style={{background:"#222222"}}>SIGNUP
+      <Link href="/user/signup" className="hover:bg-white hover:text-teal-700 text-white font-bold py-2 px-4 rounded mt-4" style={{background:"#222222"}}>SIGNUP
       </Link>
       </div>
     </div>

@@ -70,7 +70,7 @@ export default function Signup() {
 
     <div className="w-2/5 p-5 rounded-tr-2xl rounded-br-2xl py-40 px-12"style={{backgroundColor:"#222222", color:"#045757"}}>
       <h2 className="text-3xl font-bold mb-8">Already Have An Account?</h2>
-      <Link href="/login" className="hover:bg-white hover:text-teal-700 text-black font-bold py-2 px-4 rounded mt-4" style={{background:"#E4E4E4"}}>LOGIN
+      <Link href="/user/login" className="hover:bg-white hover:text-teal-700 text-black font-bold py-2 px-4 rounded mt-4" style={{background:"#E4E4E4"}}>LOGIN
       </Link>
       </div>
     </div>
