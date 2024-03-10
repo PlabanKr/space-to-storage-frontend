@@ -17,7 +17,7 @@ const NavbarComponent = () => {
                     <Link href="/" className={`${styles.navText} hover:text-emerald-700 text-xl font-bold`}>Home</Link>
                     <Link href="/" className={`${styles.navText} hover:text-emerald-700 text-xl font-bold`}>About</Link>
                     <Link href="/" className={`${styles.navText} hover:text-emerald-700 text-xl font-bold`}>Contact</Link>
-                    <Link href="/" className={`${styles.navBtn} hover:text-emerald-700 text-xl text-teal-900 py-2 px-8 rounded-full font-bold`}>LOGIN</Link>
+                    <Link href="/user/login" className={`${styles.navBtn} hover:text-emerald-700 text-xl text-teal-900 py-2 px-8 rounded-full font-bold`}>LOGIN</Link>
                 </div>
             </nav>
         </div>
