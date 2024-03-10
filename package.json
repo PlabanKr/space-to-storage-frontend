@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@maptiler/sdk": "^1.2.0",
+    "force": "^0.0.3",
     "leaflet": "^1.9.4",
     "next": "14.0.3",
     "react": "^18",
