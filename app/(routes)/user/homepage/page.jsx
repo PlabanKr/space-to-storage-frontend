@@ -1,4 +1,3 @@
-import NavbarComponent from "./_components/Navbar/navbar";
 import React from 'react';
 import Link from 'next/link';
 
@@ -17,7 +16,6 @@ const PlusButton = () => {
 export default function Home() {
   return (
     <>
-      <NavbarComponent />
       <PlusButton />
     </>
   );
