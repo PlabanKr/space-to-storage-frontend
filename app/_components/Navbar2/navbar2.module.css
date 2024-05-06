@@ -1,0 +1,17 @@
+.navBg{
+    background-color : #222222;
+    border-radius: 10px 0px 10px 10px;
+}
+
+.navText{
+    color : #045757;
+}
+
+.navBtn{
+    background-color : #045757;
+    color : #E4E4E4;
+}
+
+.logoContainer {
+    position: relative;
+}
