@@ -2,10 +2,13 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import { TiArrowSync } from "react-icons/ti";
+import { IoIosAddCircle } from "react-icons/io";
 import * as maptilersdk from "@maptiler/sdk";
 import "@maptiler/sdk/dist/maptiler-sdk.css";
+import Upload from "@/app/_components/Upload/upload";
 
 const MapTwoComponent = () => {
+    const [showPopup, setshowPopup] = useState(false);
 
     const changeMapStyle = () => {
         if (mapStyle === maptilersdk.MapStyle.SATELLITE) {
@@ -41,6 +44,7 @@ const MapTwoComponent = () => {
 
     return (
         <>
+            {showPopup ? <Upload/> : <></>}
             <section style={{ position: "relative", width: "100vw", height: "100vh" }}>
                 <map ref={mapContainer} style={{ position: "absolute", width: "100%", height: "100%" }}></map>
                 <button 
@@ -48,6 +52,12 @@ const MapTwoComponent = () => {
                     onClick={changeMapStyle}
                 >
                     <TiArrowSync />
+                </button>
+                <button 
+                    className="fixed bottom-10 left-4 bg-white text-3xl text-gray-800 font-bold p-2 rounded border border-gray-400 shadow-sm hover:bg-gray-100"
+                    onClick={() => setshowPopup(!showPopup)}
+                >
+                    <IoIosAddCircle />
                 </button>
             </section>
         </>
