@@ -1,11 +1,17 @@
 "use client";
 
 import Image from 'next/image'
-import React from 'react';
+import React, {useState} from 'react';
 import Link from 'next/link';
 
 
 export default function Signup() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  
   return (
     <div className="flex flex-col items-center justify-center min-h-screen min-w-screen py-2 bg-opacity-95 bg-black" style={{ backgroundImage: "url('/3.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
       <main className="flex flex-col items-center justify-center w-full flex-1 px-3 text-center" style={{ color: "black" }}>
@@ -20,6 +26,7 @@ export default function Signup() {
                   id="firstName"
                   placeholder={"First Name"}
                   autoComplete="off"
+                  onChange={(e) => setFirstName(e.target.value)}
                   style={{ borderRadius: "12px", height: "35px", backgroundColor: "#029A9A", paddingLeft: "10px", color: "black", border: "transparent" }}
                 />
               </div>
@@ -29,6 +36,7 @@ export default function Signup() {
                   id="lastName"
                   placeholder={"Last Name"}
                   autoComplete="off"
+                  onChange={(e) => setLastName(e.target.value)}
                   style={{ borderRadius: "12px", height: "35px", backgroundColor: "#029A9A", paddingLeft: "10px", color: "black", border: "transparent" }}
                 />
               </div>
@@ -38,6 +46,7 @@ export default function Signup() {
                   id="email"
                   placeholder={"Email"}
                   autoComplete="off"
+                  onChange={(e) => setEmail(e.target.value)}
                   style={{ borderRadius: "12px", height: "35px", backgroundColor: "#029A9A", paddingLeft: "10px", color: "black", border: "transparent", width: "94%" }}
                 />
               </div>
@@ -47,6 +56,7 @@ export default function Signup() {
                   id="password"
                   placeholder={"Password"}
                   autoComplete="off"
+                  onChange={(e) => setPassword(e.target.value)}
                   style={{ borderRadius: "12px", height: "35px", backgroundColor: "#029A9A", paddingLeft: "10px", color: "black", border: "transparent", width: "94%" }}
                 />
               </div>
@@ -56,6 +66,7 @@ export default function Signup() {
                   id="confirmPassword"
                   placeholder={"Confirm Password"}
                   autoComplete="off"
+                  onChange={(e) => setConfirmPassword(e.target.value)}
                   style={{ borderRadius: "12px", height: "35px", backgroundColor: "#038686", paddingLeft: "10px", color: "black", border: "transparent", width: "94%" }}
                 />
               </div>
