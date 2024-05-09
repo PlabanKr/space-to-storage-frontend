@@ -44,15 +44,15 @@ const MapTwoComponent = () => {
 
     return (
         <>
-            {showPopup ? <Upload/> : <></>}
             <section style={{ position: "relative", width: "100vw", height: "100vh" }}>
                 <map ref={mapContainer} style={{ position: "absolute", width: "100%", height: "100%" }}></map>
                 <button 
                     className="fixed bottom-8 right-2.5 bg-white text-gray-800 font-bold p-2 rounded border border-gray-400 shadow-sm hover:bg-gray-100"
                     onClick={changeMapStyle}
-                >
+                    >
                     <TiArrowSync />
                 </button>
+                {showPopup ? <Upload/> : <></>}
                 <button 
                     className="fixed bottom-10 left-4 bg-white text-3xl text-gray-800 font-bold p-2 rounded border border-gray-400 shadow-sm hover:bg-gray-100"
                     onClick={() => setshowPopup(!showPopup)}

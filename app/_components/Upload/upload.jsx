@@ -1,7 +1,6 @@
 "use client";
 import React, {useState} from "react";
 import { FaCloudUploadAlt } from "react-icons/fa";
-import styles from "./upload.module.css";
 
 const Upload = () => {
     const [selectedFile, setSelectedFile] = useState(null);
@@ -12,7 +11,7 @@ const Upload = () => {
     };
     
     return (
-        <div className="fixed bottom-8">
+        <div className="fixed top-1/4 right-1/2 translate-x-1/2 translate-y-1/2 bg-white py-10 px-36">
             <label htmlFor="file-input" className="file-input-label">
                 <input
                 id="file-input"
