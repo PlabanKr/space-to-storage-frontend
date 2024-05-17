@@ -15,7 +15,7 @@ const NavbarComponent = () => {
                 {/* Options */}
                 <div className="space-x-12">
                     <Link href="/user/profile" className={`${styles.navBtn} hover:text-emerald-700 text-xl text-teal-900 py-2 px-8 rounded-full font-bold`}>PROFILE</Link>
-                    <Link href="/user/login" className={`${styles.navBtn} hover:text-emerald-700 text-xl text-teal-900 py-2 px-8 rounded-full font-bold`}>LOGIN</Link>
+                    <Link href="/user/login" className={`${styles.navBtn} hover:text-emerald-700 text-xl text-teal-900 py-2 px-8 rounded-full font-bold`}>LOG IN</Link>
                 </div>
             </nav>
         </div>
