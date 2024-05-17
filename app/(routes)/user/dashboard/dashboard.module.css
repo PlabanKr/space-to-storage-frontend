@@ -1,0 +1,61 @@
+.dashboardBody {
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+  background-color: #222222;
+}
+
+.h1 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  color: #fdfdfd;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.th, .td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: left;
+}
+
+.th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #3f3f3f;
+}
+
+.td {
+  font-size: 1.2rem;
+  color: #3f3f3f;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #09483e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+.mt-5 {
+   margin-top: 2rem; 
+}
