@@ -8,7 +8,6 @@ Space to Storage is a comprehensive web application. The primary goal of this pr
 
 - **Ground Elevation Analysis:** Gain insights into the topography of your agricultural land to make informed decisions about crop selection, irrigation planning, and drainage.
 
-
 ## Getting Started
 
 ### Prerequisites
