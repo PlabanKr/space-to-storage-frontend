@@ -2,7 +2,7 @@
 
 ## Overview
 
-Space to Storage is a comprehensive web application built with Next.js for the frontend and FastAPI for the backend. The primary goal of this project is to provide farmers with tools and features to optimize ground elevation, manage water storage, and enhance overall agricultural efficiency.
+Space to Storage is a comprehensive web application. The primary goal of this project is to provide farmers with tools and features to optimize ground elevation, manage water storage, and enhance overall agricultural efficiency.
 
 ## Features
 
